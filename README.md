@@ -1,12 +1,19 @@
-## Important Note to Epicodus Students
+# _Help Queue_
 
-This project contains all the code from the LearnHowToProgram.com [Section 2: React Fundamentals](https://www.learnhowtoprogram.com/react/react-fundamentals) coursework in which we created a Help Queue application in [React.js](https://reactjs.org/). 
+#### By: _**David Gamble**_
 
-It is meant to be used as a starter repo to continue the Help Queue project in three separate learning sections of [the _React_ course](https://www.learnhowtoprogram.com/react) on LearnHowToProgram.com: 
+#### _A React web app to demonstrate React basics with Redux where the user can create, update, and delete tickets for the help queue._
+* _The main branch is an example using only React._
+* _The testing-reducers branch shows how to implement reducers and test them using Jest._
+* _The react-with-redux branch refactors the code from the main branch to use Redux and use store as well as how to set up the index.js.  Install the following package when using Redux._
+```
+npm install redux@4.2.0 react-redux@8.0.2
+```
 
-* Section 3 "React with Redux", starting in the lesson titled ["Setting up Our First Redux Project"](https://www.learnhowtoprogram.com/react/react-with-redux/setting-up-our-first-project).
-* Section 4 "React with NoSQL", starting in the lessons titled ["Refactoring Help Queue to Use Hooks"](https://www.learnhowtoprogram.com/react/react-with-nosql/refactoring-help-queue-to-use-hooks).
-* Section 5 "React with APIs", starting in the lesson title ["React Context"](https://www.learnhowtoprogram.com/react/react-with-apis/react-context)
+* _Use create-react-app command below to scaffold a React project:_
+```
+npx create-react-app [PROJECT NAME]
+```
 
 ---
 
