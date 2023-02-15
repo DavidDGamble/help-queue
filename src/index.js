@@ -8,8 +8,9 @@ import reportWebVitals from './reportWebVitals';
 import { legacy_createStore as createStore} from 'redux'
 import reducer from './reducers/ticket-list-reducer';
 import { Provider } from 'react-redux';
+import rootReducer from './reducers/index';
 
-const store = createStore(reducer);
+const store = createStore(rootReducer);
 
 // Great way to test by keeping an eye on the current state of store
 store.subscribe(() => 
