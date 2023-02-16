@@ -7,18 +7,41 @@ import TicketDetail from './TicketDetail';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as a from './../actions';
+//DATE-FSN---vvvvv
+import { formatDistanceToNow } from 'date-fns';
 
 class TicketControl extends React.Component {
 
   constructor(props) {
     super(props);
-    console.log(props);
     this.state = {
       // formVisibleOnPage: false,
       selectedTicket: null,
       editing: false
     };
   }
+
+  //DATE-FSN---vvvvv
+  componentDidMount() {
+    this.waitTimeUpdateTimer = setInterval(() =>
+      this.updateTicketElapsedWaitTime(),
+    60000
+    );
+  }
+
+  componentDidUpdate() {
+    console.log("component updated!");
+  }
+
+  componentWillUnmount(){
+    console.log("component unmounted!");
+    clearInterval(this.waitTimeUpdateTimer);
+  }
+
+  updateTicketElapsedWaitTime = () => {
+    console.log("tick");
+  }
+//DATE-FSN---^^^^^
 
   handleClick = () => {
     if (this.state.selectedTicket != null) {
